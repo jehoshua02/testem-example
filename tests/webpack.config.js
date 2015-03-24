@@ -16,7 +16,10 @@ module.exports = {
   output: {
     path: __dirname + '/bundles',
     filename: '[name]'
+  },
+  module: {
+    loaders: [
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel?experimental' }
+    ]
   }
 }
-
-console.log(module.exports);
