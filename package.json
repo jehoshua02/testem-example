@@ -9,8 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^4.7.16",
-    "babel-loader": "^4.2.0",
     "glob": "^5.0.3",
     "jsonfile": "^2.0.0",
     "phantomjs": "^1.9.16",
