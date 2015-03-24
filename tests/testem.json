@@ -1,0 +1,6 @@
+{
+  "src_files": [ "./tests/unit/**/*.js", "./src/**/*.js" ],
+  "serve_files": "./tests/bundles/**/*.js",
+  "before_tests": "webpack --config ./tests/webpack.config.js",
+  "launch_in_dev": ["PhantomJS", "Chrome", "Firefox", "Safari"]
+}
