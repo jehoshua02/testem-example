@@ -1,3 +1,4 @@
-function hello() {
-  return 'hello world';
+function hello(name) {
+  name = name || 'world'
+  return 'hello ' + name;
 }
