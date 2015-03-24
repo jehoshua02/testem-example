@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testem --launch phantomjs"
+    "test": "testem --launch phantomjs,chrome,firefox,safari"
   },
   "author": "",
   "license": "ISC",
