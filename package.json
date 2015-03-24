@@ -1,14 +1,16 @@
 {
-  "name": "testem-hello-world",
+  "name": "testem-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "Showing how easy it is to setup and use testem for TDD style workflow.",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "testem --file ./tests/testem.json",
     "test/bundles": "webpack --config ./tests/webpack.config.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Joshua Stoutenburg <jehoshua02@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^4.7.16",
     "babel-loader": "^4.2.0",
@@ -17,5 +19,16 @@
     "phantomjs": "^1.9.16",
     "testem": "^0.7.6",
     "webpack": "^1.7.3"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jehoshua02/testem-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jehoshua02/testem-example/issues"
+  },
+  "homepage": "https://github.com/jehoshua02/testem-example"
 }
