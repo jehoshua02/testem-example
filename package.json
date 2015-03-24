@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testem"
+    "test": "testem --launch phantomjs"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "phantomjs": "^1.9.16",
     "testem": "^0.7.6"
   }
 }
