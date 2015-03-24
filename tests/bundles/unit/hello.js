@@ -44,28 +44,30 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	describe('hello', function () {
+	"use strict";
+
+	describe("hello", function () {
 	  var hello = __webpack_require__(1);
 
-	  it('returns "hello world"', function () {
-	    expect(hello()).toBe('hello world');
+	  it("returns \"hello world\"", function () {
+	    expect(hello()).toBe("hello world");
 	  });
 
-	  it('should say my name, say my name', function () {
-	    expect(hello('Joshua')).toBe('hello Joshua');
+	  it("should say my name, say my name", function () {
+	    expect(hello("Joshua")).toBe("hello Joshua");
 	  });
 	});
-
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = function hello(name) {
-	  name = name || 'world'
-	  return 'hello ' + name;
-	};
+	"use strict";
 
+	module.exports = function hello(name) {
+	  name = name || "world";
+	  return "hello " + name;
+	};
 
 /***/ }
 /******/ ]);

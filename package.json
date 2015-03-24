@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testem --file ./tests/testem.json"
+    "test": "testem --file ./tests/testem.json",
+    "test/bundles": "webpack --config ./tests/webpack.config.js"
   },
   "author": "",
   "license": "ISC",

@@ -46,9 +46,21 @@
 
 	"use strict";
 
-	describe("test in subdir", function () {
-	  it("should get picked up by testem", function () {
-	    expect(true).toBe(true);
+	var _objectWithoutProperties = function (obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; };
+
+	describe("babel-loader", function () {
+	  it("should preprocess destructuring statements", function () {
+	    var _ref = { one: 1, two: 2, three: 3, four: 4, five: 5 };
+	    var one = _ref.one;
+	    var two = _ref.two;
+	    var three = _ref.three;
+
+	    var other = _objectWithoutProperties(_ref, ["one", "two", "three"]);
+
+	    expect(one).toBe(1);
+	    expect(two).toBe(2);
+	    expect(three).toBe(3);
+	    expect(other).toEqual({ four: 4, five: 5 });
 	  });
 	});
 
