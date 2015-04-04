@@ -5,17 +5,19 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "testem --file ./tests/testem.json",
-    "test/bundles": "webpack --config ./tests/webpack.config.js"
+    "test": "testem --file ./test/testem.json",
+    "test/bundles": "webpack --config ./test/webpack.config.js",
+    "lint": "eslint src test/unit"
   },
   "author": "Joshua Stoutenburg <jehoshua02@gmail.com>",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^4.7.16",
+    "babel-eslint": "^2.0.2",
     "babel-loader": "^4.2.0",
+    "eslint": "^0.18.0",
     "glob": "^5.0.3",
-    "jsonfile": "^2.0.0",
     "phantomjs": "^1.9.16",
     "testem": "^0.7.6",
     "webpack": "^1.7.3"

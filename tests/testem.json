@@ -1,6 +1,0 @@
-{
-  "src_files": [ "./tests/unit/**/*.js", "./src/**/*.js" ],
-  "serve_files": "./tests/bundles/**/*.js",
-  "before_tests": "npm run test/bundles",
-  "launch_in_dev": ["PhantomJS", "Chrome", "Firefox"]
-}
