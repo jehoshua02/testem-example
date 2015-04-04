@@ -1,6 +1,6 @@
 {
   "src_files": [ "./test/unit/**/*.js", "./src/**/*.js" ],
   "serve_files": "./build/test/bundles/**/*.js",
-  "before_tests": "npm run test/bundles",
+  "before_tests": "npm run test/bundles; npm run lint",
   "launch_in_dev": ["PhantomJS", "Chrome", "Firefox"]
 }
